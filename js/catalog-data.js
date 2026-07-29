@@ -1,0 +1,108 @@
+/* Каталог товаров и услуг ВИКОМ.
+   Единый источник данных для главной страницы (превью) и страницы каталога. */
+
+const CATALOG_CATEGORIES = [
+  { id: "outdoor", label: "Наружная реклама" },
+  { id: "signage", label: "Вывески" },
+  { id: "print", label: "Полиграфия" },
+  { id: "digital", label: "Digital" },
+];
+
+const CATALOG = [
+  {
+    id: "billboard-3x6",
+    name: "Билборд 3×6",
+    category: "outdoor",
+    price: "от 45 000 ₽/мес",
+    desc: "Классический щит 3×6 м на трафиковых магистралях города с гарантированным охватом.",
+    featured: true,
+  },
+  {
+    id: "banner-transit",
+    name: "Баннер-перетяжка",
+    category: "outdoor",
+    price: "от 25 000 ₽/мес",
+    desc: "Растяжка над проезжей частью — заметна с дальней дистанции, подходит для акций и открытий.",
+    featured: true,
+  },
+  {
+    id: "citylight",
+    name: "Ситилайт",
+    category: "outdoor",
+    price: "от 18 000 ₽/мес",
+    desc: "Компактная подсвеченная конструкция для пешеходных зон и остановок транспорта.",
+    featured: false,
+  },
+  {
+    id: "signboard-led",
+    name: "Световая вывеска",
+    category: "signage",
+    price: "от 12 000 ₽/м²",
+    desc: "Объёмные буквы и лайтбоксы с LED-подсветкой — разработка, изготовление и монтаж под ключ.",
+    featured: true,
+  },
+  {
+    id: "stand",
+    name: "Штендер",
+    category: "signage",
+    price: "от 8 000 ₽/шт",
+    desc: "Складная уличная конструкция формата А1–А0 для входных групп магазинов и кафе.",
+    featured: false,
+  },
+  {
+    id: "facade-panel",
+    name: "Фасадная панель",
+    category: "signage",
+    price: "от 9 500 ₽/м²",
+    desc: "Композитные панели с печатью или плёнкой для оформления фасадов и входных зон.",
+    featured: false,
+  },
+  {
+    id: "flyers",
+    name: "Листовки и буклеты",
+    category: "print",
+    price: "от 15 ₽/шт",
+    desc: "Полноцветная печать тиражом от 100 экземпляров, любые форматы плотности бумаги.",
+    featured: true,
+  },
+  {
+    id: "posters",
+    name: "Плакаты A1–A0",
+    category: "print",
+    price: "от 320 ₽/шт",
+    desc: "Крупноформатная печать для витрин, стендов и мероприятий.",
+    featured: false,
+  },
+  {
+    id: "business-cards",
+    name: "Визитки и бланки",
+    category: "print",
+    price: "от 2 900 ₽/тираж",
+    desc: "Корпоративная полиграфия с ламинацией, тиснением и другими вариантами отделки.",
+    featured: false,
+  },
+  {
+    id: "digital-banner",
+    name: "Digital-баннер",
+    category: "digital",
+    price: "от 18 000 ₽/мес",
+    desc: "Размещение рекламы на сайтах и в соцсетях с таргетингом на целевую аудиторию.",
+    featured: true,
+  },
+  {
+    id: "smm",
+    name: "Ведение соцсетей",
+    category: "digital",
+    price: "от 35 000 ₽/мес",
+    desc: "Контент-план, публикации и модерация сообществ бренда под ключ.",
+    featured: false,
+  },
+  {
+    id: "landing",
+    name: "Разработка сайта-визитки",
+    category: "digital",
+    price: "от 60 000 ₽",
+    desc: "Одностраничный сайт с адаптивным дизайном и формой заявки.",
+    featured: false,
+  },
+];
