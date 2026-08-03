@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Полиграфия — ВИКОМ</title>
+<meta name="description" content="Полиграфия от агентства ВИКОМ: визитки, листовки, буклеты и плакаты — печать от одного экземпляра до больших тиражей. Цены и примеры работ.">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<meta name="theme-color" content="#2B2B2B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="services">
+
+<!-- ==================== HEADER (шапка прокручивается вместе со страницей) ==================== -->
+<header class="site-header">
+  <div class="header-topbar">
+    <div class="container header-inner">
+      <div class="header-left">
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="index.html" class="logo-badge">
+          <span class="logo-title">
+            <span class="logo-title-main">ВиКом</span>
+            <span class="logo-title-sub">рекламное агентство</span>
+          </span>
+        </a>
+      </div>
+
+      <div class="header-search">
+        <form id="headerSearchForm" role="search">
+          <input type="search" id="headerSearch" placeholder="Поиск по сайту…" aria-label="Поиск по сайту" autocomplete="off">
+          <button type="submit" aria-label="Искать">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+        </form>
+        <div class="search-suggest" id="searchSuggest"></div>
+      </div>
+
+      <div class="header-actions">
+        <a href="tel:+74951234567" class="header-phone">+7 495 123-45-67</a>
+        <a href="#contact-form" class="btn btn-primary header-cta">Оставить заявку</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-banner">
+    <img class="header-banner-img" src="assets/header-photo.jpg" alt="Здание рекламного агентства ВИКОМ с фирменной вывеской и цифровым билбордом на фасаде">
+    <div class="header-banner-overlay"></div>
+    <div class="container header-banner-content">
+      <span class="eyebrow eyebrow-light">Рекламное агентство ВИКОМ</span>
+      <p class="header-banner-title">Полиграфия любого тиража</p>
+    </div>
+  </div>
+</header>
+
+<nav class="dropdown-nav" id="dropdownNav">
+    <div class="nav-search">
+        <form id="navSearchForm" role="search">
+            <input type="search" id="navSearchInput" placeholder="Поиск по сайту…" aria-label="Поиск по сайту" autocomplete="off">
+            <button type="submit" aria-label="Искать">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
+            </button>
+        </form>
+        <div class="search-suggest" id="navSearchSuggest"></div>
+    </div>
+    <a href="index.html" data-page="index">Главная</a>
+    <div class="nav-services" id="navServices">
+      <button type="button" class="nav-services-toggle" id="navServicesToggle" aria-expanded="false">
+        <span>Наши услуги</span>
+        <svg class="nav-services-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="nav-services-submenu">
+        <a href="outdoor.html" data-page="services">Наружная реклама</a>
+        <a href="signage.html" data-page="services">Вывески</a>
+        <a href="print.html" data-page="services">Полиграфия</a>
+        <a href="bigprint.html" data-page="services">Широкоформатная печать</a>
+        <a href="interior.html" data-page="services">Интерьер и декор</a>
+        <a href="gifts.html" data-page="services">Сувениры с логотипом</a>
+        <a href="heraldry.html" data-page="services">Геральдика</a>
+        <a href="horeca.html" data-page="services">Товары для кафе</a>
+        <a href="repair.html" data-page="services">Ремонт рекламы</a>
+        <a href="design.html" data-page="services">Дизайн</a>
+        <a href="digital.html" data-page="services">Digital-продвижение</a>
+        <a href="services.html" data-page="services" class="nav-services-all">Все услуги →</a>
+      </div>
+    </div>
+    <a href="blog.html" data-page="blog">Блог</a>
+    <a href="portfolio.html" data-page="portfolio">Портфолио</a>
+    <a href="calculator.html" data-page="calculator">Калькулятор и цены</a>
+    <a href="production.html" data-page="production">Производство</a>
+    <div class="nav-bottom">
+
+        <a href="#contact-form" class="nav-feedback">Обратная связь</a>
+
+        <div class="nav-contacts">
+            <a href="tel:+74951234567">+7 495 123-45-67</a><span class="nav-contacts-sep" aria-hidden="true">·</span><a href="mailto:info@vikom.ru">info@vikom.ru</a>
+        </div>
+        <div class="nav-address">г. Елец, ул. Коммунаров, 70Б</div>
+    </div>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- ==================== TICKER ==================== -->
+<div class="ticker-strip">
+  <div class="ticker-track">
+    <span>Наружная реклама</span><span>Вывески</span><span>Полиграфия</span><span>Широкоформатная печать</span><span>Интерьер и декор</span><span>Сувениры с логотипом</span><span>Геральдика</span><span>Товары для кафе</span><span>Ремонт рекламы</span><span>Дизайн</span><span>Digital-продвижение</span>
+    <span>Наружная реклама</span><span>Вывески</span><span>Полиграфия</span><span>Широкоформатная печать</span><span>Интерьер и декор</span><span>Сувениры с логотипом</span><span>Геральдика</span><span>Товары для кафе</span><span>Ремонт рекламы</span><span>Дизайн</span><span>Digital-продвижение</span>
+  </div>
+</div>
+
+<!-- ==================== BREADCRUMB + HERO ==================== -->
+<section class="page-hero">
+  <div class="container">
+    <p class="service-breadcrumb"><a href="services.html">Наши услуги</a> / Полиграфия</p>
+    <span class="eyebrow">Услуги</span>
+    <h1>Полиграфия</h1>
+    <p class="muted">Визитки, листовки, буклеты и плакаты — печать от одного экземпляра до больших тиражей.</p>
+    <div class="service-detail-actions">
+      <a href="#contact-form" class="btn btn-primary">Оставить заявку</a>
+      <a href="calculator.html?section=print" class="btn btn-outline">Рассчитать стоимость</a>
+    </div>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+<!-- ==================== ОПИСАНИЕ УСЛУГИ ==================== -->
+<section class="section" style="padding-bottom:10px;">
+  <div class="container">
+    <p>Печатаем полноцветную полиграфию для бизнеса: от визиток и бланков до буклетов и плакатов. Поможем с дизайном макета, подберём плотность бумаги и вид отделки — ламинацию, тиснение или конгрев.</p>
+  </div>
+</section>
+
+<!-- ==================== ЧТО ВХОДИТ В УСЛУГУ ==================== -->
+<section class="section service-features" style="padding-top:10px;">
+  <div class="container">
+    <h2>Что входит в услугу</h2>
+    <div class="grid-4">
+      <article class="machine-card">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V3h12v6M6 18h12v4H6v-4Z"/><rect x="3" y="9" width="18" height="9" rx="2"/></svg></div>
+        <h3>Дизайн макета</h3>
+        <p class="muted">Разработаем или доработаем макет под печать.</p>
+      </article>
+      <article class="machine-card">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V3h12v6M6 18h12v4H6v-4Z"/><rect x="3" y="9" width="18" height="9" rx="2"/></svg></div>
+        <h3>Подбор материала</h3>
+        <p class="muted">Поможем выбрать плотность бумаги и вид отделки.</p>
+      </article>
+      <article class="machine-card">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V3h12v6M6 18h12v4H6v-4Z"/><rect x="3" y="9" width="18" height="9" rx="2"/></svg></div>
+        <h3>Цифровая и офсетная печать</h3>
+        <p class="muted">Печатаем малые и большие тиражи на разном оборудовании.</p>
+      </article>
+      <article class="machine-card">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V3h12v6M6 18h12v4H6v-4Z"/><rect x="3" y="9" width="18" height="9" rx="2"/></svg></div>
+        <h3>Постпечатная обработка</h3>
+        <p class="muted">Ламинация, биговка, высечка, тиснение.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+<!-- ==================== КАК ВЫГЛЯДИТ РЕЗУЛЬТАТ ==================== -->
+<section class="section">
+  <div class="container">
+    <h2>Как выглядит результат</h2>
+    <p class="muted result-gallery-note">Ориентировочные примеры формата — пришлём визуализацию по вашему проекту перед производством.</p>
+    <div class="result-gallery">
+      <div class="result-thumb cat-print">
+        <div class="result-thumb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V3h12v6M6 18h12v4H6v-4Z"/><rect x="3" y="9" width="18" height="9" rx="2"/></svg></div>
+        <div class="result-thumb-caption">Визитки с тиснением</div>
+      </div>
+      <div class="result-thumb cat-print">
+        <div class="result-thumb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V3h12v6M6 18h12v4H6v-4Z"/><rect x="3" y="9" width="18" height="9" rx="2"/></svg></div>
+        <div class="result-thumb-caption">Буклет в три сложения</div>
+      </div>
+      <div class="result-thumb cat-print">
+        <div class="result-thumb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V3h12v6M6 18h12v4H6v-4Z"/><rect x="3" y="9" width="18" height="9" rx="2"/></svg></div>
+        <div class="result-thumb-caption">Листовки А5</div>
+      </div>
+      <div class="result-thumb cat-print">
+        <div class="result-thumb-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V3h12v6M6 18h12v4H6v-4Z"/><rect x="3" y="9" width="18" height="9" rx="2"/></svg></div>
+        <div class="result-thumb-caption">Плакат A1 для витрины</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+<!-- ==================== ЦЕНЫ ==================== -->
+<section class="section">
+  <div class="container">
+    <h2>Цены</h2>
+    <div class="price-table-wrap">
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>Услуга</th>
+            <th>Описание</th>
+            <th>Цена</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Листовки и буклеты</td>
+            <td>Полноцветная печать тиражом от 100 экземпляров.</td>
+            <td class="price-cell">от 15 ₽/шт</td>
+          </tr>
+          <tr>
+            <td>Плакаты A1–A0</td>
+            <td>Крупноформатная печать для витрин и мероприятий.</td>
+            <td class="price-cell">от 320 ₽/шт</td>
+          </tr>
+          <tr>
+            <td>Визитки и бланки</td>
+            <td>Корпоративная полиграфия с ламинацией и тиснением.</td>
+            <td class="price-cell">от 2 900 ₽/тираж</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted" style="margin-top:14px; font-size:0.85rem;">Цены ориентировочные, точный расчёт зависит от параметров заказа — уточняйте у менеджера или используйте калькулятор.</p>
+  </div>
+</section>
+
+<div class="meander"></div>
+
+<!-- ==================== CTA ==================== -->
+<section class="section section-alt">
+  <div class="container" style="text-align:center;">
+    <h2>Обсудим ваш проект?</h2>
+    <p class="muted" style="max-width:520px; margin: 0 auto 24px;">Расскажите о задаче — предложим формат, сроки и рассчитаем стоимость.</p>
+    <div class="hero-actions" style="justify-content:center;">
+      <a href="calculator.html?section=print" class="btn btn-primary">Рассчитать стоимость</a>
+      <a href="#contact-form" class="btn btn-outline">Оставить заявку</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER / ANDERGROUND ==================== -->
+<footer class="site-footer" id="contact-form">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <div class="footer-map">
+                <div style="position:relative;overflow:hidden;width:100%;height:220px;">
+                    <a href="https://yandex.ru/maps/10713/yelets/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;left:4px;z-index:10;">Елец</a>
+                    <a href="https://yandex.ru/maps/10713/yelets/house/ulitsa_kommunarov_70b/Z0EYcgFlQUUAQFtofXpzeXpkZg==/?ll=38.465806%2C52.628672&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;left:4px;z-index:10;">Улица Коммунаров, 70Б на карте Ельца — Яндекс Карты</a>
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=38.465806%2C52.628672&mode=whatshere&utm_source=share&whatshere%5Bpoint%5D=38.465807%2C52.628672&whatshere%5Bzoom%5D=17&z=17" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;border:none;"></iframe>
+                </div>
+            </div>
+            <p>Рекламное агентство полного цикла: наружная реклама, дизайн, полиграфия и digital.</p>
+        </div>
+        <div class="footer-col footer-contacts">
+            <h4>Контакты</h4>
+            <p><a href="tel:+74951234567">+7 495 123-45-67</a></p>
+            <p><a href="mailto:info@vikom.ru">info@vikom.ru</a></p>
+            <p>г. Елец, ул. Коммунаров, 70Б</p>
+            <p>Пн–Пт: 9:00–18:00</p>
+        </div>
+        <div class="footer-col footer-legal">
+            <h4>Юридическая информация</h4>
+            <p>ООО «ВИКОМ»</p>
+            <p>ИНН 7701234567</p>
+            <p>ОГРН 1157746123456</p>
+            <p>Юр. адрес: г. Елец, ул. Коммунаров, 70Б</p>
+        </div>
+        <div class="footer-col footer-form">
+            <h4>Обратная связь</h4>
+            <form id="feedbackForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <textarea placeholder="Сообщение" rows="3"></textarea>
+                <button type="submit" class="btn btn-primary btn-block">Отправить</button>
+            </form>
+            <p class="form-success" id="formSuccess" hidden>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>© 2026 ВИКОМ. Все права защищены.</p>
+        <p>Политика конфиденциальности · Публичная оферта</p>
+    </div>
+</footer>
+
+<script src="js/services-data.js"></script>
+<script src="js/portfolio-data.js"></script>
+<script src="js/production-data.js"></script>
+<script src="js/blog-data.js"></script>
+<script src="js/render-helpers.js"></script>
+<script src="js/search-index.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
